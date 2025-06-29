@@ -16,3 +16,80 @@
 @media (prefers-color-scheme: light) {
 
 }
+
+.neon-static {
+  text-shadow:
+    0 0 2px currentColor,
+    0 0 2px currentColor,
+    0 0 4px currentColor;
+}
+
+
+.shadow-neon {
+  box-shadow:
+    0 0 2px currentColor,
+    0 0 5px currentColor,
+    0 0 8px currentColor;
+}
+
+.neon-glow-white {
+  text-shadow: 0 0 5px #3ba6a600, 0 0 10px #3ba6a600, 0 0 15px white, 0 0 20px white;
+}
+.neon-glow-blue {
+  text-shadow: 0 0 5px #3ba6a600, 0 0 10px #3ba6a600, 0 0 15px #3ba6a6, 0 0 20px #3ba6a6;
+}
+.neon-glow-pink {
+  text-shadow: 0 0 5px #b1537900, 0 0 10px #00000000, 0 0 15px #b15378, 0 0 20px #b15378;
+}
+
+@keyframes neonFlicker {
+  0% {
+    text-shadow: none;
+    opacity: 0.1;
+  }
+  10% {
+    opacity: 1;
+    text-shadow: 0 0 2px currentColor;
+  }
+  20% {
+    opacity: 0.3;
+    text-shadow: none;
+  }
+  30% {
+    opacity: 1;
+    text-shadow: 0 0 5px currentColor;
+  }
+  40% {
+    opacity: 0.7;
+    text-shadow: none;
+  }
+  60% {
+    opacity: 1;
+    text-shadow: 0 0 5px currentColor, 0 0 5px currentColor;
+  }
+  80% {
+    opacity: 0.8;
+  }
+}
+
+.neon-flicker {
+  animation: neonFlicker 5s ease-in-out forwards;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.background-animated {
+  background: linear-gradient(270deg, #0a0a0f, #1e1e2e, #121219, #1e1e2e);
+  background-size: 600% 600%;
+  animation: gradientShift 20s ease infinite;
+}

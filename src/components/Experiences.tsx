@@ -9,12 +9,14 @@ const Experiences = () => {
   };
 
   return (
+    <div className="w-full  h-[500px]"> 
     <section
       id="experience"
-      className="py-12 text-[#dce2f0] flex flex-col justify-between w-[800px] m-auto"
+      className="py-10 #text-[#1e293b] flex flex-col justify-between w-[800px] m-auto"
+
     >
       <div className="title text-center">
-        <h1 className="text-3xl font-bold mb-3 text-white">Experiences</h1>
+        <h1 className="text-3xl font-bold mb-3 text-white neon-glow-white">Experiences</h1>
       </div>
 
       <div className="tabs flex flex-row justify-around mb-6 text-white mt-4 ">
@@ -37,12 +39,12 @@ const Experiences = () => {
         </button>
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center h-[250px]">
         <div className="">
           {activeTab === "experience-pro" && (
             <div
               id="experience-pro"
-              className={`tabcontent ${
+              className={`tabcontent  ${
                 activeTab === "experience-pro" ? "active" : "display-none"
               }`}
             >
@@ -50,7 +52,8 @@ const Experiences = () => {
                 <h3 className="font-bold text-2xl text-white">
                   Développeur Full-Stack | Dépanizy | Alternance 2024-2025
                 </h3>
-                <p className="text-xl">
+                <p className="text-xl text-[#e0dbdb]">
+
                   Création d'interfaces en React.js, d'une application mobile
                   multiplateforme en React Native, et manipulation de bases de
                   données tout en intégrant des APIs pour la gestion des
@@ -61,7 +64,7 @@ const Experiences = () => {
                 <h3 className="font-bold text-2xl text-white">
                   Développeur web | CNAM CEDRIC | Stage 2023-2024
                 </h3>
-                <p className="text-xl">
+                <p className="text-xl text-[#e0dbdb]">
                   Développement et traduction de code en JavaScript, conception
                   de sites web en HTML, CSS et JavaScript.
                 </p>
@@ -81,7 +84,7 @@ const Experiences = () => {
                   Bac +4 Développeur Full Stack en alternance | Cloud Campus |
                   2024-2026
                 </h3>
-                <p className="text-xl">
+                <p className="text-xl text-[#e0dbdb]">
                   site web: <a href="https://cloud-campus.fr/">Cloud Campus</a>
                 </p>
               </div>
@@ -89,7 +92,7 @@ const Experiences = () => {
                 <h3 className="font-bold text-2xl text-white">
                   BAC+2 Développeur Web | OpenClassrooms | 2022-2023
                 </h3>
-                <p className="text-xl">
+                <p className="text-xl text-[#e0dbdb]">
                   Développement de sites web responsives et dynamiques, création
                   d'API et de bases de données, l'optimisation des performances
                   et la gestion complète des projets web.
@@ -107,6 +110,7 @@ const Experiences = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

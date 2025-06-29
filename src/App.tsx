@@ -5,16 +5,21 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import Experiences from "./components/Experiences";
+import Footer from "./components/footer";
 
 function App() {
   return (
-    <div className="bg-[#50586c] w-full">
+    <div className=" background-animated w-full">
+      <nav className=" fixed top-0 w-full">
       <Navbar />
+
+      </nav>
       <Home />
       <About />
-      <Experiences />
-      <Portfolio />
       <Skills />
+      <Portfolio />
+      <Experiences />
+      <Footer />
     </div>
   );
 }
