@@ -1,4 +1,3 @@
-import React from "react";
 import imgKasa from "../assets/Optimized-kasa.png";
 import imgBooki from "../assets/Optimized-booki.png";
 import imgBibli from "../assets/Optimized-bibli.png";
