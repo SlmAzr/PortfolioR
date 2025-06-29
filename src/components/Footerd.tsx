@@ -1,7 +1,7 @@
 import { CiLinkedin, CiMail } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 
-const Footer = () => {
+const Footerd = () => {
   return (
     <section id="contact" className=" py-10">
       <div className="text-center text-white mb-4 ">
@@ -35,4 +35,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footerd;
