@@ -13,6 +13,7 @@ import {
   FaUserTie,
   FaUserClock,
   FaLightbulb,
+  FaVuejs,
 } from "react-icons/fa";
 import { SiMongodb, SiExpress } from "react-icons/si";
 
@@ -28,6 +29,7 @@ function Skills() {
     { name: "Node.js", icon: <FaNodeJs className="text-[#16a34a] neon-glow-green" /> },
     { name: "Express", icon: <SiExpress className="text-[#4b5563] neon-glow-gray" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-[#22c55e] neon-glow-green-light" /> },
+    { name: "Vue.js", icon: <FaVuejs className="text-[#4ade80] neon-glow-green-light" /> },
   ];
 
   const softSkills = [

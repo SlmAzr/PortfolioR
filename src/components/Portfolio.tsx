@@ -1,9 +1,17 @@
 import imgKasa from "../assets/Optimized-kasa.png";
 import imgBooki from "../assets/Optimized-booki.png";
 import imgBibli from "../assets/Optimized-bibli.png";
+import imgGalerie from "../assets/galerieimg.png"
 import imgPortfolio from "../assets/sophie.png";
 
 const projects = [
+  {
+    title: "Galerie",
+    subtitle :"Application de visite virtuelle",
+    description: "J'ai créé une application web de visite virtuelle en utilisant VueJS, offrant aux utilisateurs la possibilité de visionner des oeuvres artistiques. Cette réalisation a impliquer le développement de l'interface utilisateur, la gestion des oeuvres provenant d'une API.",
+    image: imgGalerie,
+    ressources: ["VueJS", "tailwindcss", "API"],
+  },
   {
     title: "Kasa",
     subtitle: "Application de réservation",
